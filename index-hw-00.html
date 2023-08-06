@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:regular,italic,700,700italic" rel="stylesheet" />
+</head>
+
+<body>
+    <section>
+        <article>
+            <div>
+                <h4>Bill</h4>
+                <input type="text" id="bill-amount" placeholder="0">
+            </div>
+            <div>
+                <h4 class="select_tip">Select Tip %</h4>
+                <article class="wrap">
+                    <div>
+                        <input type="radio" name="tip" checked value="5%" id="five-percent">
+                        <label class="label" for="five-percent">5%</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="tip" value="10%" id="ten-percent">
+                        <label class="label" for="ten-percent">10%</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="tip" value="15%" id="fifteen-percent">
+                        <label class="label" for="fifteen-percent">15%</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="tip" value="25%" id="twenty-five-percent">
+                        <label class="label" for="twenty-five-percent">25%</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="tip" value="50%" id="fifty-percent">
+                        <label class="label" for="fifty-percent">50%</label>
+                    </div>
+                    <div>
+                        <input class="custom" type="text" placeholder="Custom" name="" value="" id="custom-text">
+                        <input type="radio" name="tip" value="" id="custom-radio">
+                        <label class="custom_label" for="custom-radio">Custom</label>
+                    </div>
+                </article>
+            </div>
+            <div>
+                <h4>Number of People<span class="wrong_title">Can’t be zero</span></h4>
+                <input type="text" id="number-of-people" placeholder="0">
+            </div>
+        </article>
+        <article class="calculate_wrap">
+            <div class="amount_total_wrap">
+                <div class="amount_total">
+                    <h4>Tip Amount <br>
+                        <span>/ person</span>
+                    </h4>
+                    <p id="tip-amount">$0.00</p>
+                </div>
+                <div class="amount_total">
+                    <h4>Total <br>
+                        <span>/ person</span>
+                    </h4>
+                    <p id="total-person">$0.00</p>
+                </div>
+            </div>
+            <div>
+                <input type="radio" value="" id="calculate" disabled>
+                <label class="calculate" for="calculate">calculate</label>
+            </div>
+        </article>
+    </section>
+    <script src="./app.js"></script>
+</body>
+
+</html>
